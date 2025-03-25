@@ -1,0 +1,118 @@
+/*
+* Frontier Guide
+*/
+
+/* guide black */
+@font-face {
+    font-family: 'fr_guide_black';
+    src: url('frguide/frguide-black-webfont.eot');
+    src: url('frguide/frguide-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('frguide/frguide-black-webfont.woff2') format('woff2'),
+         url('frguide/frguide-black-webfont.woff') format('woff'),
+         url('frguide/frguide-black-webfont.ttf') format('truetype'),
+         url('frguide/frguide-black-webfont.svg#fr_guideblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* guide bold */
+@font-face {
+    font-family: 'fr_guide_bold';
+    src: url('frguide/frguide-bold-webfont.eot');
+    src: url('frguide/frguide-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('frguide/frguide-bold-webfont.woff2') format('woff2'),
+         url('frguide/frguide-bold-webfont.woff') format('woff'),
+         url('frguide/frguide-bold-webfont.ttf') format('truetype'),
+         url('frguide/frguide-bold-webfont.svg#fr_guidebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* guide book */
+@font-face {
+    font-family: 'fr_guide_book';
+    src: url('frguide/frguide-book-webfont.eot');
+    src: url('frguide/frguide-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('frguide/frguide-book-webfont.woff2') format('woff2'),
+         url('frguide/frguide-book-webfont.woff') format('woff'),
+         url('frguide/frguide-book-webfont.ttf') format('truetype'),
+         url('frguide/frguide-book-webfont.svg#fr_guidebook') format('svg');
+    font-weight: normal; /* Set to 600 or more for it to not appear bold; */
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fr_guide_book_italic';
+    src: url('frguide/frguide-bookitalic-webfont.eot');
+    src: url('frguide/frguide-bookitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('frguide/frguide-bookitalic-webfont.woff2') format('woff2'),
+         url('frguide/frguide-bookitalic-webfont.woff') format('woff'),
+         url('frguide/frguide-bookitalic-webfont.ttf') format('truetype'),
+         url('frguide/frguide-bookitalic-webfont.svg#fr_guidebook_italic') format('svg');
+    font-weight: normal; /* Set to 600 or more for it to not appear bold; */
+    font-style: normal;
+
+}
+
+/* guide heavy */
+@font-face {
+    font-family: 'fr_guide_heavy';
+    src: url('frguide/frguide-heavy-webfont.eot');
+    src: url('frguide/frguide-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('frguide/frguide-heavy-webfont.woff2') format('woff2'),
+         url('frguide/frguide-heavy-webfont.woff') format('woff'),
+         url('frguide/frguide-heavy-webfont.ttf') format('truetype'),
+         url('frguide/frguide-heavy-webfont.svg#fr_guideheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+* PP Object Sans
+*/
+
+/* PP Object Sans Regular */
+@font-face {
+    font-family: 'PPObjectSans-Regular';
+    src: url('PPObjectSansRegular/PPObjectSans-Regular.eot');
+    src: url('PPObjectSansRegular/PPObjectSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('PPObjectSansRegular/PPObjectSans-Regular.woff2') format('woff2'),
+         url('PPObjectSansRegular/PPObjectSans-Regular.woff') format('woff'),
+         url('PPObjectSansRegular/PPObjectSans-Regular.ttf') format('truetype'),
+         url('PPObjectSansRegular/PPObjectSans-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* PP Object Sans Medium */
+@font-face {
+    font-family: 'PPObjectSans-Medium';
+    src: url('PPObjectSansMedium/PPObjectSans-Medium.eot');
+    src: url('PPObjectSansMedium/PPObjectSans-Medium.eot?#iefix') format('embedded-opentype'),
+         url('PPObjectSansMedium/PPObjectSans-Medium.woff2') format('woff2'),
+         url('PPObjectSansMedium/PPObjectSans-Medium.woff') format('woff'),
+         url('PPObjectSansMedium/PPObjectSans-Medium.ttf') format('truetype'),
+         url('PPObjectSansMedium/PPObjectSans-Medium.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* PP Object Sans Bold */
+@font-face {
+    font-family: 'PPObjectSans-Bold';
+    src: url('PPObjectSansBold/PPObjectSans-Bold.eot');
+    src: url('PPObjectSansBold/PPObjectSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('PPObjectSansBold/PPObjectSans-Bold.woff2') format('woff2'),
+         url('PPObjectSansBold/PPObjectSans-Bold.woff') format('woff'),
+         url('PPObjectSansBold/PPObjectSans-Bold.ttf') format('truetype'),
+         url('PPObjectSansBold/PPObjectSans-Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

@@ -1,0 +1,94 @@
+#blur.active {
+	opacity: 0.1;
+	pointer-events: none;
+}
+
+.popup{
+	visibility: visible;
+	width: 400px;
+	background-color: #fff;
+	border-radius: 6px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%,-50%) scale(0.1);
+	align-items: center; 
+	padding: 0 30px 30px;
+	color: red;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+    z-index: 9999
+}
+
+.open-popup {
+	visibility: visible;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(1);
+}
+.popup img {
+width: 100px;
+margin-top: -50px;
+border-radius: 50%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+	font-size: 30px;
+	font-weight: 500;
+	margin: 30px 0 10px;
+}
+.popup button {
+	width: 60%;
+	margin-top: 50px;
+	padding: 10px 0;
+	background-color: red;
+	color: #fff;
+	border-radius:10px;
+	font-size: 18px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup p {
+	font-size: 15px;
+}
+.popup a {
+	color: #fff;
+	text-decoration: none;
+
+}
+button a {
+	color: initial;
+	color: #fff;
+	text-decoration: none;
+
+}
+
+@media only screen and (max-width: 500px) { 
+
+	.popup{
+		width: 200px;
+	
+	}
+	.popup p {
+		font-size: larger;
+	} 
+	.popup button{
+		width: 40%;
+		font-size: 10px;
+}
+
+	.popup h2 {
+		font-size: 20px;
+		font-weight: 500;
+		margin: 10px 0 10px;
+	}
+	.popup img {
+		width: 70px;
+		margin-top: -50px;
+		border-radius: 50%;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		}
+}

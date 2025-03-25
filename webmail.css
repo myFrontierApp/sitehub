@@ -1,0 +1,223 @@
+@charset "utf-8";
+/*@import url("https://frontier.com/resources/css/vendor/bootstrap.frontier.css?v=1.9");*/
+
+/* CSS Document */
+
+a {
+	color: #3399cc;
+	text-decoration: none;
+}
+a:hover {
+	color: #3399cc;
+	text-decoration: underline;
+}
+a:visited {
+	color: #3399cc;
+}
+
+.well {
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid;
+	border-color: #dcdcdc;
+	min-height: 400px;
+}
+
+.outerbox {
+	background: none;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	border: 0;
+	padding: 15px 30px 20px 30px;
+	padding-top: 20px;
+	font-size: 12px;
+	clear: both;
+}
+
+.outerbox .center {
+	text-align: center;
+}
+.outerbox .centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.outerbox p {
+	clear: both;
+	margin: 5px 0;
+	margin-left: 3px;
+}
+
+.outerbox .note {
+	width: 400px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.outerbox .links {
+	width: 400px;
+}
+
+.outerbox h1 {
+	text-align: center;
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.outerbox #errorMsg {
+	margin: 0;
+	padding: 0;
+}
+.outerbox #errorMsg h3 {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-size: 12px;
+	color: #ff0000;
+	text-align: center;
+}
+
+.outerbox .btn {
+	margin: 15px 0 0 0;
+	font-size: 13px;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ba0403;
+	padding: 2px 0;
+	border: 0;
+	color: #fff;
+	border: 0;
+	webkit-border-radius: 5px;
+	moz-border-radius: 5px;
+	border-radius: 5px;
+	text-shadow: 1px 1px 1px #333;
+	background: -webkit-linear-gradient(rgba(186, 4, 3, 0.75), rgba(96, 5, 5,  0.85));
+	background: -moz-linear-gradient(rgba(186, 4, 3, 0.75), rgba(96, 5, 5,  0.85));
+	background: -ms-linear-gradient(rgba(186, 4, 3, 0.75), rgba(96, 5, 5,  0.85));
+	background: -o-linear-gradient(rgba(186, 4, 3, 0.75), rgba(96, 5, 5,  0.85));
+	background: linear-gradient(rgba(186, 4, 3, 0.75), rgba(96, 5, 5,  0.85));
+	-pie-background: url(images/pattern.png), linear-gradient(rgba(186, 4, 3, 0.75), rgba(96, 5, 5, 0.85));
+}
+
+.hiddenhost {
+	color: white;
+	bgcolor: white;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.yahooButton {
+	width: 120px;
+}
+
+.proftable, .passtable, .btntable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#loginbox1 {
+	width: 340px;
+}
+#loginbox1 p {
+	width: 320px;
+}
+
+#logoutbox {
+	width: 400px;
+}
+
+#spinningwheel {
+	width: 320px;
+	text-align: center;
+}
+
+#yahooSearchTop {
+	background: none;
+	width: 360px;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 0;
+}
+
+#yahooSearchTop img{
+	float: right;
+	margin: 0;
+}
+
+form.yahooSearch {
+	background: none;
+	width: 360px;
+	margin: 0 auto;
+	top: 10px;
+	border: 0;
+	webkit-box-shadow: none;
+	moz-box-shadow: none;
+	box-shadow: none;
+	padding: 0px 30px 20px 30px;
+}
+
+#inputSearch {
+	float: left;
+	width: 220px;
+}
+
+#SubmitSearch {
+	float: right;
+	margin-left: 0;
+	font-size: 13px;
+	width: 126px;
+	height: 34px;
+	padding: 5px;
+	background: #3399cc;
+	clear: both;
+	color: #ffffff;
+}
+
+#webmail-login .fid-help-links .fid-help-links-option i {
+	color: #141928;
+	margin-left: 3px;
+}
+#webmail-login .fid-help-links {
+	font-weight: 700;
+	color: #333;
+	font-size: 14px
+}
+#webmail-login .fid-help-links a {
+	color: #333 !important;
+}
+#webmail-login .btn {
+	border: none;
+	border-radius: 20px !important;
+	font-family: PPObjectSans-Bold, Helvetica, Arial, sans-serif;
+}
+#webmail-login .btn-primary {
+	background-color: #ff0037;
+}
+#webmail-login h1 {
+	margin-bottom: 42px!important;
+}
+#webmail-login h3 {
+	color: #ff0037;
+	margin-bottom: 24px!important;
+	margin-top: 0px!important;
+}
+#webmail-login .container .yahoo-font-color a {
+	color: #5616a8 !important;
+}
+#webmail-login .container .support {
+	font-size: 15px !important;
+}
+#webmail-login .container .support a {
+	color: #333 !important;
+}
+
+#captcha {
+	margin-bottom: 30px;
+}
+.btn-block{
+        margin-bottom:10px;
+}
+
